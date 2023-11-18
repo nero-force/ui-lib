@@ -1,15 +1,13 @@
 {
   "name": "nero-dev",
-  "version": "0.0.3",
+  "version": "0.0.12",
   "main": "dist/nero-ui.umd.js",
   "module": "dist/nero-ui.es.js",
-  "files": [
-    "dist",
-    "src/lib/global.css",
-    "tailwind.config.js",
-    "tailwind.config.d.ts"
-  ],
   "types": "dist/index.d.ts",
+  "files": [
+    "src/lib/**/*",
+    "src/lib/global.css"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
