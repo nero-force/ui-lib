@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "files": [
     "src/lib/**/*",
-    "src/lib/global.css"
+    "src/lib/global.css",
+    "dist"
   ],
   "scripts": {
     "dev": "vite",
