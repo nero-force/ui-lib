@@ -23,7 +23,7 @@
     "noFallthroughCasesInSwitch": true
   },
   // Include only the files you want to compile
-  "include": ["src/lib/**/*"],
+  "include": ["src/lib/**/*", "tailwind.config.d.ts"],
   // Exclude files you don't want to compile
   "exclude": ["node_modules", "vite.config.ts", "src/main.tsx", "src/App.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
