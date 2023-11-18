@@ -1,0 +1,7 @@
+/* Typography.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can still define custom styles if needed, or extend Tailwind's utility classes */
