@@ -1,5 +1,6 @@
-import Typography from './components/Typography'
-import './global.css'
+import React from 'react'
+import Typography from './lib/Typography'
+import './lib/global.css'
 
 const App = (): JSX.Element => {
   return (
