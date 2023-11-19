@@ -1,14 +1,18 @@
 import React from 'react'
-import Typography from './lib/Typography'
+import Typography from './lib/components/Typography'
+import Container from './lib/components/Container'
+
 import './lib/global.css'
 
 const App = (): JSX.Element => {
   return (
     <>
       <Typography variant="h1">Quick waltz</Typography>
-      <Typography variant="h2">Jivex fox nymph grabs</Typography>
-      <Typography variant="h3">Jived fox nymph grabs quick waltz</Typography>
-      <Typography variant="h4">Jived fox nymph grabs quick waltz</Typography>
+      <Container size='2xl'>
+        <Typography variant="h2">Jivex fox nymph grabs</Typography>
+        <Typography variant="h3">Jived fox nymph grabs quick waltz</Typography>
+        <Typography variant="h4">Jived fox nymph grabs quick waltz</Typography>
+      </Container>
       <Typography variant="h5">h5</Typography>
       <Typography variant="h6">h6</Typography>
       <Typography variant="p">
