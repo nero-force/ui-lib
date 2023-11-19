@@ -1,6 +1,6 @@
 {
   "name": "nero-dev",
-  "version": "0.0.12",
+  "version": "0.0.20",
   "main": "dist/nero-ui.umd.js",
   "module": "dist/nero-ui.es.js",
   "types": "dist/index.d.ts",

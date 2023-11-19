@@ -1,2 +1,2 @@
-export { default as Typography } from './Typography'
-export { tailwindpreset } from './tailwindconfig'
+export { default as Typography } from './components/Typography'
+export { tailwindpreset } from './config/tailwindconfig'
