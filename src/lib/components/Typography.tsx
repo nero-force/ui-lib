@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react'
+import { twMerge } from 'tailwind-merge'
 
 type TypographyProps = {
   variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p'
@@ -52,9 +53,9 @@ const Typography: React.FC<TypographyProps> = ({
   }), [])
 
   // Combine the class for the variant with any additional classes passed via props
-  const combinedClassNames = `${typographyClasses[variant]} ${(otherProps.className != null) || ''}`
+  const combinedClassNames = `${typographyClasses[variant]} ${(otherProps.className) || ''}`
 
-  return <Component className={combinedClassNames} {...otherProps}>{children}</Component>
+  return <Component {...otherProps} className={combinedClassNames}>{children}</Component>
 }
 
 export default Typography
