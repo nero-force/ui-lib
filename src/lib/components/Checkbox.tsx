@@ -1,6 +1,13 @@
 import React, { useMemo } from 'react'
 import { Typography } from '..'
 
+const checkboxStyles = {
+  base: 'w-6 h-6 flex items-center justify-center rounded',
+  normal: 'bg-white border-2 border-primary', // Use primary color for border
+  checked: 'bg-primary text-white', // Use primary color for background
+  disabled: 'bg-gray-400'
+}
+
 type CheckboxProps = {
   checked?: boolean
   disabled?: boolean
@@ -40,13 +47,6 @@ const Checkbox: React.FC<CheckboxProps> = ({
   onChange,
   ...otherProps
 }) => {
-  const checkboxStyles = {
-    base: 'w-6 h-6 flex items-center justify-center rounded',
-    normal: 'bg-white border-2 border-blue-500',
-    checked: 'bg-blue-500 text-white',
-    disabled: 'bg-gray-400'
-  }
-
   const getClassName = useMemo((): string => {
     let className = checkboxStyles.base
     if (checked) {
